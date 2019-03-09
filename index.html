@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> </title>
+
+  <!-- JQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Boot Strap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Moment.js-->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <!-- Personal Style Sheet-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="jumbotron p-2 bg-dark text-light">
+      <h1 class="display-4 text-center m-2">Penn Station</h1>
+      <hr class="my-4 m-1">
+      <p class="text-center">Train Arrival Scheduler</p>
+    </div>
+
+    <div class="card">
+      <h5 class="card-header">Next Trains</h5>
+      <div class="card-body col-lg-12">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Train Number</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody id="newTrain">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card mt-2">
+      <h5 class="card-header">Add Train</h5>
+      <div class="card-body col-lg-12">
+
+        <form>
+          <div class="form-group">
+            <label for="Name">Train Name</label>
+            <input type="text" class="form-control" id="Name" placeholder="Keystone Express">
+          </div>
+          <div class="form-group">
+            <label for="TrainNumber">Train Number</label>
+            <input type="text" class="form-control" id="TrainNumber" placeholder="KE2093">
+          </div>
+          <div class="form-group">
+            <label for="Role">Destination</label>
+            <input type="text" class="form-control" id="Destination" placeholder="New York">
+          </div>
+          <div class="form-group">
+            <label for="DepartTime">Depart Time</label>
+            <input type="time" class="form-control" id="DepartTime" placeholder="06:00 AM">
+          </div>
+          <div class="form-group">
+            <label for="Frequency">Frequency</label>
+            <input type="number" class="form-control" id="Frequency" placeholder="20">
+          </div>
+          <button type="submit" class="btn btn-primary" id="SubmitBtn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!--card-->
+
+
+
+  </div>
+  <!--container-->
+
+
+
+
+  <!-- Boot Strap Links-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Personal file-->
+  <script src="assets/javascript/java.js"></script>
+
+</body>
+
+</html>
